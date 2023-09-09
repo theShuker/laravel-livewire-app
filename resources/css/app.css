@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  @apply font-semibold;
+}
+
+h1, h2{
+  @apply text-xl;
+}
+
+button{
+  @apply px-4 py-0 rounded border border-gray-400 hover:bg-gray-100;
+}
+
+input, textarea{
+  @apply rounded border border-gray-300 p-2 w-full
+}
+
+.form{
+  @apply flex flex-col gap-5;
+}
+
+.form-control label{
+  @apply font-semibold mt-2;
+}
